@@ -1,0 +1,2 @@
+- [ ] dibujar un triangulo equilatero
+- [ ] escoger un punto random dentro del triangulo

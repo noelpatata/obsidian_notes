@@ -1,0 +1,2 @@
+- Hacer **api/v1/refreshToken&accessToken** más de una vez, si no, se alerta al usuario, y al administrador.
+-  No se puede refrescar un access token antes de que caduque.

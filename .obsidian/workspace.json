@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "noel/wallet tracker/Mysql Docker Setup.md",
+                "file": "noel/Utils/Create USB key for linux user.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mysql Docker Setup"
+              "title": "Create USB key for linux user"
             }
           }
         ]
@@ -171,11 +171,41 @@
   },
   "active": "595098dc86db086c",
   "lastOpenFiles": [
-    "noel/wallet tracker/script 4 creating environment variables.md",
+    "noel/Utils/bash tabulation search case insensitive.md",
+    "noel/OpenSSL/Generate .pfx.md",
+    "noel/OpenSSL/Generate .key and .cert files.md",
+    "noel/OpenSSL",
+    "noel/Utils/Create USB key for linux user.md",
+    "noel/Utils/Create python virtual environment.md",
+    "noel/PN532 NFC with ESP-12E.md",
+    "noel/Longest Substring Without Repeating Characters.md",
+    "noel/create a link.md",
+    "noel/tmp.md",
     "noel/wallet tracker/Mysql Docker Setup.md",
-    "noel/wallet tracker/How to run.md",
-    "noel/wallet tracker",
-    "adri",
-    "noel"
+    "noel/Welcome.md",
+    "noel/Utils/SSH Auth Git Repo.md",
+    "noel/Utils/scan wifi ssids.md",
+    "noel/Utils/Remove git repo files.md",
+    "noel/Utils/git prompt cheatsheet.md",
+    "noel/Untitled/Drawing 2025-08-02 17.05.43.excalidraw.md",
+    "noel/NFCheckIn/NFC_Reader/TODO.md",
+    "noel/NFCheckIn/Network Architecture.md",
+    "noel/NFCheckIn/Auth Architecture.md",
+    "noel/NFCheckIn/Initial ESP-12E WIFI config.md",
+    "noel/NFCheckIn/Razones para alertar al usuario de posible Token Hijacking.md",
+    "noel/NFCheckIn/DB Schema.md",
+    "noel/NFCheckIn/User registration (card).md",
+    "noel/Learning TypeScript/Chat app/Redis container.md",
+    "noel/Learning TypeScript/Chat app/Dependencies.md",
+    "noel/Arduino/images/20250621144151.png",
+    "noel/Utils",
+    "noel/Untitled",
+    "noel/NFCheckIn/NFC_Reader",
+    "noel/NFCheckIn",
+    "noel/Learning TypeScript/Chat app",
+    "noel/Learning TypeScript",
+    "noel/Learning Javascript/trifuerza",
+    "noel/Learning Javascript",
+    "noel/Learning Docker/wallet tracker"
   ]
 }
