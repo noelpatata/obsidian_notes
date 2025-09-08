@@ -13,3 +13,8 @@ cryptography==44.0.0
 ```
 uwsgi --http 127.0.0.1:5051 --master -p 4 -w app:app
 ```
+
+# Windows
+``` bash
+waitress-serve --host 127.0.0.1 app:app
+```
