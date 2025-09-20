@@ -23,3 +23,4 @@ py -m testing.sign
 ## Send request
 Won't tell you how to use Postman/Curl
 # How to receive data
+N/A
