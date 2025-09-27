@@ -6,6 +6,7 @@ python -m testing.generate
 ## Login
 Not writing how to login wtf.
 ## Share key
+Make sure to get the public key of the user you created and paste it in the file `testing/public_key.pem` before running this script
 ``` bash
 py -m testing.share "eyy..."
 ```
