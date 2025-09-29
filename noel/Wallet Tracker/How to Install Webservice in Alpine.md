@@ -25,7 +25,6 @@ chmod-socket = 660        ; Socket permissions
 chown-socket = nginx:nginx; Socket owner
 vacuum = true             ; Clean up socket on exit
 die-on-term = true
-daemonize = /var/log/wallettracker.log
 ```
 
 Then test it with:
@@ -91,6 +90,7 @@ export WALLET_TRACKER_SECRET=s0m3r4nd0mt3xt
 
 command="${VENV_PATH}/bin/uwsgi"
 command_args="--ini ${directory}/app.ini"
+command_background="yes"
 
 start_pre() {
     checkpath --directory --owner $user:$group ${pidfile%/*}
