@@ -89,8 +89,8 @@ export WALLET_TRACKER_DB_HOST=192.168.0.24
 export WALLET_TRACKER_DB_NAME=wallet_tracker
 export WALLET_TRACKER_SECRET=s0m3r4nd0mt3xt
 
-command="/bin/sh"
-command_args="-c 'source ${VENV_PATH}/bin/activate && exec ${VENV_PATH}/bin/uwsgi --ini ${directory}/app.ini'"
+command="${VENV_PATH}/bin/uwsgi"
+command_args="--ini ${directory}/app.ini"
 
 start_pre() {
     checkpath --directory --owner $user:$group ${pidfile%/*}
