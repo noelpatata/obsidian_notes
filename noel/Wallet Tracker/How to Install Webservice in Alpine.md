@@ -25,6 +25,7 @@ chmod-socket = 660        ; Socket permissions
 chown-socket = nginx:nginx; Socket owner
 vacuum = true             ; Clean up socket on exit
 die-on-term = true
+daemonize = /var/log/wallettracker.log
 ```
 
 Then test it with:
