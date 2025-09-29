@@ -75,16 +75,25 @@ After configuring the virtual host, we run `nginx` to start the web server.
 First we create the file `/etc/init.d/wallettracker`:
 ``` bash
 #!/sbin/openrc-run
-name="WalletTracker uWSGI"
-description="uWSGI instance for WalletTracker Flask API"
-
-command="/root/WalletTrackerAPI/.venv/bin/uwsgi"
-command_args="--ini /root/WalletTrackerAPI/app.ini"
-command_background="yes"
+description="WalletTracker uWSGI"
+directory="/srv/WalletTrackerAPI"
 pidfile="/run/wallettracker.pid"
-directory="/root/WalletTrackerAPI"
 user="nginx"
 group="nginx"
+VENV_PATH="/srv/WalletTrackerAPI/.venv"
+
+export WALLET_TRACKER_DB_USER=root
+export WALLET_TRACKER_DB_PASSWORD=PNe4Wq0oqvx87oGs6L7Fku9vf
+export WALLET_TRACKER_DB_HOST=192.168.0.24
+export WALLET_TRACKER_DB_NAME=wallet_tracker
+export WALLET_TRACKER_SECRET=s0m3r4nd0mt3xt
+
+command="/bin/sh"
+command_args="-c 'source ${VENV_PATH}/bin/activate && exec ${VENV_PATH}/bin/uwsgi --ini ${directory}/app.ini'"
+
+start_pre() {
+    checkpath --directory --owner $user:$group ${pidfile%/*}
+}
 ```
 
 ``` bash

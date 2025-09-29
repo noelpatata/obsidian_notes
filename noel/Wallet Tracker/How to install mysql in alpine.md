@@ -21,6 +21,10 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.0.21' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
+# Network config
+
+The last thing to do is open the socket so others can connect, for so, we need to edit the following file `/etc/my.cnf.d/mariadb-server.cnf`. Just comment `skip-networking` option and add `bind-address=[server ip address]`, after that, restart services and the socket should be open.
+
 # Utils
 
 - To log in mysql just  `mysql -u root -p`
