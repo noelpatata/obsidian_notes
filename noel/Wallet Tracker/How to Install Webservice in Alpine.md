@@ -42,8 +42,8 @@ Create certificates:
 ``` bash
 mkdir -p /etc/nginx/ssl
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-  -keyout /etc/nginx/ssl/flask.key \
-  -out /etc/nginx/ssl/flask.crt
+  -keyout /etc/nginx/ssl/wallettracker.key \
+  -out /etc/nginx/ssl/wallettracker.crt
 ```
 
 Setup virtualhost in `/etc/nginx/http.d/wallettracker.conf`:
