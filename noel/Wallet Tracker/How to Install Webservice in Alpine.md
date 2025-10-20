@@ -25,6 +25,7 @@ chmod-socket = 660
 chown-socket = nginx:nginx
 vacuum = true
 die-on-term = true
+log.to = /var/log/wallettracker.log (REVISAR NO SE SI SE LLAMA ASI EXACTAMENTE)
 ```
 
 Then test it with:
@@ -71,8 +72,14 @@ server {
 After configuring the virtual host, we run `nginx` to start the web server.
 
 # Create OpenRC service
-
-First we create the file `/etc/init.d/wallettracker`:
+First we create the log files:
+```bash
+mkdir -p /var/logs
+touch /var/logs/wallettracker.log
+chown nginx:nginx /var/logs/wallettracker.log
+chmod 644 /var/logs/wallettracker.log
+```
+Then we create the service `/etc/init.d/wallettracker`:
 ``` bash
 #!/sbin/openrc-run
 description="WalletTracker uWSGI"
