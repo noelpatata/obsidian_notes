@@ -13,11 +13,8 @@ rc-update add mariadb
 
 Inside mysql, create the user:
 ```bash
-CREATE USER 'root'@'192.168.0.21' IDENTIFIED BY 'PNe4Wq0oqvx87oGs6L7Fku9vf';
-
--- Grant all privileges
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.0.21' WITH GRANT OPTION;
-
+CREATE USER 'root'@'[ Source server IP address]' IDENTIFIED BY '[ Password]';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'[ Source server IP address ]' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 

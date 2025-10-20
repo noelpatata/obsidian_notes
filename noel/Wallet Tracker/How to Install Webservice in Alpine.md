@@ -17,13 +17,13 @@ pip install -r requirements.txt
 Create app.ini file:
 ``` bash
 [uwsgi]
-module = app:app          ; Flask app entry point
-master = true             ; Enable master process
-processes = 4             ; Number of worker processes
-socket = /tmp/app.sock     ; Unix socket for Nginx
-chmod-socket = 660        ; Socket permissions
-chown-socket = nginx:nginx; Socket owner
-vacuum = true             ; Clean up socket on exit
+module = main:app
+master = true
+processes = 4
+socket = /tmp/app.sock
+chmod-socket = 660
+chown-socket = nginx:nginx
+vacuum = true
 die-on-term = true
 ```
 
@@ -50,7 +50,7 @@ Setup virtualhost in `/etc/nginx/http.d/wallettracker.conf`:
 ``` bash
 server {
     listen 443 ssl;
-    server_name 192.168.0.21;
+    server_name [Server IP];
 
     ssl_certificate /etc/nginx/ssl/wallettracker.crt;
     ssl_certificate_key /etc/nginx/ssl/wallettracker.key;
@@ -63,7 +63,7 @@ server {
 
 server {
     listen 80;
-    server_name 192.168.0.21;
+    server_name [Server IP];
     return 301 https://$host$request_uri;
 }
 ```
@@ -76,20 +76,20 @@ First we create the file `/etc/init.d/wallettracker`:
 ``` bash
 #!/sbin/openrc-run
 description="WalletTracker uWSGI"
-directory="/srv/WalletTrackerAPI"
+directory="/srv/WalletTrackerAPI/app"
 pidfile="/run/wallettracker.pid"
 user="nginx"
 group="nginx"
-VENV_PATH="/srv/WalletTrackerAPI/.venv"
+VENV_PATH="/srv/WalletTrackerAPI/app/.venv"
 
 export WALLET_TRACKER_DB_USER=root
-export WALLET_TRACKER_DB_PASSWORD=PNe4Wq0oqvx87oGs6L7Fku9vf
+export MYSQL_ROOT_PASSWORD=PNe4Wq0oqvx87oGs6L7Fku9vf
 export WALLET_TRACKER_DB_HOST=192.168.0.24
-export WALLET_TRACKER_DB_NAME=wallet_tracker
+export MYSQL_DATABASE=wallet_tracker
 export WALLET_TRACKER_SECRET=s0m3r4nd0mt3xt
 
 command="${VENV_PATH}/bin/uwsgi"
-command_args="--ini ${directory}/app.ini"
+command_args="--ini ${directory}/uwsgi.ini"
 command_background="yes"
 
 start_pre() {
