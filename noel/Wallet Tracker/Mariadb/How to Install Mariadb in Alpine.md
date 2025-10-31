@@ -2,7 +2,7 @@
 
 ```bash
 apk add mariadb mariadb-client
-myql_install_db --user=mysql --datadir=/var/lib/mysql
+mariadb-install-db --user=mysql --datadir=/var/lib/mysql
 re-service mariadb start
 mysql_install_db
 /etc/init.d/mariadb setup
