@@ -1,0 +1,13 @@
+`/etc/network/interfaces`
+``` bash
+auto lo
+iface lo inet loopback
+iface lo inet6 loopback
+
+auto eth0
+iface eth0 inet static
+        address 192.168.0.18/24
+        netmask 255.255.255.0
+        gateway 192.168.0.1
+        hostname $(hostname)
+```
