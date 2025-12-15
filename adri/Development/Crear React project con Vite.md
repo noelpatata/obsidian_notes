@@ -1,7 +1,7 @@
 
 ### Que es Vite. 
 
-Vite es un bundler de JS o sus frameworks.
+Vite es un bundler de JS o sus frameworks, transpila el codigo de tu app algo que entiende el navegador, sirve el servidor de tu app, gestiona frameworks, crea tu proyecto...
 
 #### Que es un bundler. 
 
@@ -15,8 +15,8 @@ Cuando tú escribes una app moderna:
 - Usas código que el navegador **no entiende directamente** (TypeScript, JSX).
 - Tienes imágenes, fuentes, CSS, etc.
 
-> [!note] El navegador o el móvil **no compilan eso** 
-> Asi que ahí entra el **bundler**.
+> [!tip] El navegador o el móvil **no compilan eso**. 
+> Ergo ahí entra vite y transpila el codigo de tu app algo que entiende el navegador aka el **bundler**.
 
 --- 
 
@@ -33,12 +33,13 @@ npm create vite@latest
 
 Sigue el menu interactivo. 
 
->[!tip] Si le has dado que no a el paso 5 tendras que instalar npm manualmente en el proyecto y correr el servidor de desarrollo de vite:
->```
->cd <nom-del-projecte>
->npm install
->npm run dev
->```
+>[!note] 
+> Si le has dado que no a el paso 5 tendras que instalar npm manualmente en el proyecto y correr el servidor de desarrollo de vite:
+> ```
+> cd <nom-del-projecte>
+> npm install
+> npm run dev
+> ```
 
 El menú te pedira:
 
