@@ -47,7 +47,12 @@ Por eso aparece el típico error:
 
 ### 🛠️ **Configuración recomendada del archivo `<ID>.conf`**
 
-`unprivileged: (eliminar la línea completamente)  features: nesting=1,keyctl=1,fuse=1 lxc.apparmor.profile: unconfined lxc.cap.drop: lxc.cgroup2.devices.allow: a lxc.mount.auto: "proc:rw sys:rw"`
+```bash 
+# unprivileged: (eliminar la línea completamente)
+features: nesting=1,keyctl=1,fuse=1 
+lxc.apparmor.profile: unconfined 
+lxc.cap.drop: lxc.cgroup2.devices.allow: a lxc.mount.auto: "proc:rw sys:rw"`
+```
 
 ### ✔ Por qué funciona esta configuración
 
