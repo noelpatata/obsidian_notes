@@ -17,14 +17,14 @@ task-list-app/
 │   ├── features/
 │   │   ├── tasks/
 │   │   │   ├── hooks/
-│   │   │   │   ├── useTasks.ts
+│   │   │   │   ├── useasks.ts
 │   │   │   │   ├── useTaskCreate.ts
 │   │   │   │   ├── useTaskUpdate.ts
 │   │   │   │   └── useTaskDelete.ts
 │   │   │   ├── components/
 │   │   │   │   ├── TaskList.tsx
 │   │   │   │   ├── TaskItem.tsx
-│   │   │   │   └── TaskForm.tsx
+│   │   │   │   └── TaskFormT.tsx
 │   │   │   ├── services/
 │   │   │   │   └── taskService.ts
 │   │   │   ├── types/
@@ -75,6 +75,12 @@ task-list-app/
 3. **Testabilidad**: Fácil de probar por separado
 4. **Mantenibilidad**: Todo relacionado está junto
 5. **Escalabilidad**: Fácil añadir nuevos features
+
+## notes
+cuando usar defualt y cuando no 
+ export default componente grande
+
+  zustand, redux  gestion del estado global 
 
 ---
 
