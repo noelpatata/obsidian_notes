@@ -54,6 +54,18 @@ hola_mundo.exe
 ## **4. Conceptos básicos
 
 ### **Variables y tipos de datos:**
+
+C tiene varios tipos de variables, pero hay algunos tipos básicos:  
+  
+- Enteros - números enteros que pueden ser positivos o negativos. Definidos usando char, int, short, long o long long. 
+- Enteros sin signo - números enteros que solo pueden ser positivos. Definidos usando unsigned char, unsigned int, unsigned short, unsigned long o unsigned long long.  
+- Números de punto flotante - números reales (números con fracciones). Definidos usando float y double.
+
+>[!note]
+>Los diferentes tipos de variables definen sus límites. Un char puede variar solo de -128 a 127, mientras que un long puede variar de -2,147,483,648 a 2,147,483,647 (long y otros tipos de datos numéricos pueden tener otro rango en diferentes computadoras, por ejemplo, de –9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 en una computadora de 64 bits).
+
+### Variables clasicas : 
+
 ```c
 int edad = 25;            // Entero
 float precio = 19.99;     // Decimal
@@ -61,7 +73,22 @@ char letra = 'A';         // Carácter
 char nombre[] = "Juan";   // Cadena de texto
 ```
 
+###  Qué es una string en C (idea fundamental)
+
+En C **no existen las strings como tipo propio**.  
+
+> [!note]
+>Una _string_ es simplemente:
+>
+> 👉 **un array de caracteres (`char`) terminado en `'\0'`
+>**Ejemplo real en memoria:
+>`J  o  h  n     S  m  i  t  h  \0`
+
+Ese `\0` (carácter nulo) es lo que le dice a C:  
+“aquí termina la cadena”.
+
 ### **Entrada y salida:**
+
 ```c
 int numero;
 printf("Introduce un número: ");
@@ -70,6 +97,7 @@ printf("El número es: %d\n", numero);
 ```
 
 ### **Estructuras de control:**
+
 ```c
 // Condicional
 if (edad >= 18) {
@@ -84,9 +112,50 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
----
+## **5. Ejemplos simples :**
+ 
+```c 
+#include <stdio.h>
 
-## **5. Ejemplo completo (programa interactivo)**
+int main(void) {
+    /* Declare the 2D array grades */
+    int grades[2][5];
+    float average[2];
+    int i, j;
+
+    grades[0][0] = 80;
+    grades[0][1] = 70;
+    grades[0][2] = 65;
+    grades[0][3] = 89;
+    grades[0][4] = 90;
+
+    grades[1][0] = 85;
+    grades[1][1] = 80;
+    grades[1][2] = 80;
+    grades[1][3] = 82;
+    grades[1][4] = 87;
+
+    /* Calculate average per subject */
+    for (i = 0; i < 2; i++) {
+        average[i] = 0.0f;
+
+        for (j = 0; j < 5; j++) {
+            average[i] += grades[i][j];
+        }
+
+        average[i] /= 5.0f;
+
+        printf(
+            "The average marks obtained in subject %d is: %.2f\n",
+            i,
+            average[i]
+        );
+    }
+
+    return 0;
+}
+```
+
 
 ```c
 #include <stdio.h>
@@ -113,6 +182,46 @@ int main() {
 }
 ```
 
+```c 
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    
+    char *first_name = "John";
+    char last_name[] = "Doe";
+    char name[100];
+
+    last_name[0] = 'B';
+
+    // Combina first_name y last_name con espacio en medio y guarda en name
+    // name = "John Boe"
+    sprintf(name, "%s %s", first_name, last_name);
+
+    // Compara los primeros 100 caracteres de name con "John Boe"
+    // strncmp devuelve 0 si son iguales
+    if (strncmp(name, "John Boe", 100) == 0) {
+        printf("Done!\n");  // Se imprime porque la comparación es verdadera
+    }
+
+    // Borra la cadena de name poniendo el primer carácter como nulo
+    name[0] = '\0';
+
+    // Concatena hasta 4 caracteres de first_name al final de name
+    // name = "John"
+    strncat(name, first_name, 4);
+
+    // Concatena hasta 20 caracteres de last_name al final de name
+    // Como last_name tiene 3 caracteres, name = "JohnBoe"
+    strncat(name, last_name, 20);
+
+    // Imprime la cadena final
+    printf("%s\n", name);  // Salida: JohnBoe
+
+    return 0;  // Finaliza el programa correctamente
+}
+```
+
 --- 
 
 ## **6. Declaración de Punteros**
@@ -131,6 +240,7 @@ char *ptr_char;
 ```
 
 ---
+
 ## **📌 Operadores Esenciales**
 
 ```c

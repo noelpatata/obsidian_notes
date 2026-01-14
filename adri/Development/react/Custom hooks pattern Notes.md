@@ -76,11 +76,7 @@ task-list-app/
 4. **Mantenibilidad**: Todo relacionado está junto
 5. **Escalabilidad**: Fácil añadir nuevos features
 
-## notes
-cuando usar defualt y cuando no 
- export default componente grande
 
-  zustand, redux  gestion del estado global 
 
 ---
 
