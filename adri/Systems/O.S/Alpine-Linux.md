@@ -1,4 +1,4 @@
-cv
+
 # Instalacion 
 
 La instalacion es muy simple solo tienes que lanzar el comando  : 
