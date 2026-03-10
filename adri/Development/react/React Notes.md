@@ -33,6 +33,10 @@ Esta clase si se queda asi seguiria la arquitectura que favorece las clases pequ
 
 Según su propio sitio web, es un "framework CSS que prioriza las utilidades" que proporciona varias de estas clases de utilidades de un solo propósito que puedes utilizar directamente dentro de tu marcado para diseñar un elemento.
 
+### Como se usa ?
+
+Tailwind es como bootstrap la manera de aprender usarlo es leer la documentacion para ver que hace cada clase y prueba y error hasta que te sientas comodo con el framework a la hora de aplicar las clases .
+
 ---
 
 #### 1. Crear el proyecto Vite
