@@ -15,7 +15,7 @@ ingress:
   - hostname: jenkins.example.com
     service: http://localhost:8080
   - service: http_status:404
-    ```
+```
 then i have to configure the tunnel so it redirects to my service with the following http put request:
 ``` bash
 sudo cloudflared tunnel route dns my-tunnel test.downops.win
