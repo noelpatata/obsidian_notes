@@ -13,7 +13,7 @@ ROOT = Path(__file__).parent
 OUTPUT = ROOT / "docs"
 NOTES_DIRS = ["noel", "adri"]
 EXCLUDE_PARTS = {".git", ".obsidian", "tmp", "__pycache__", "docs", ".github", "memory", ".claude"}
-SITE_TITLE = "Noel's Wiki"
+SITE_TITLE = "Wiki"
 
 # ─── helpers ──────────────────────────────────────────────────────────────────
 
