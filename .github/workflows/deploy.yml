@@ -1,46 +1,25 @@
-name: Build & Deploy Wiki
-
+name: Publish Docs to GitHub Pages
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches:
+      - main  # O 'master'
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
+  contents: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Configure Python
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: 3.x
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install mkdocs-material
 
-      - name: Build site
-        run: python build.py && touch docs/.nojekyll
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/
-          jekyll: false
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - id: deploy
-        uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force

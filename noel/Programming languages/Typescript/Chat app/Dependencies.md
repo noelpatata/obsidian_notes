@@ -1,4 +1,0 @@
-- typescript
-- ts-node
-- ws
-- redis
