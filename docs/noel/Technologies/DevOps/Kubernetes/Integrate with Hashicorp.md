@@ -1,34 +1,17 @@
-This helm is like a package manager but for sort of "modules" I use in my infra, for example, i want to implement Hashicorp vault because my secrets are stored in a vault, i install the "hashicorp" plugin with helm
-# install helm
+# extract pem from k3s service.key
 ``` bash
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+sudo openssl rsa -in /var/lib/rancher/k3s/server/tls/service.key -pubout -out k3s-pub.pem
 ```
-# install hashicorp vault
+# copy key to vault
 ``` bash
-helm repo add hashicorp https://helm.releases.hashicorp.com \
-helm repo update \
-helm install vault hashicorp/vault \
-  --set "injector.externalVaultAddr=https://vault.downops.win"
+VAULT_POD=$(kubectl get pod -l app=vault -o jsonpath='{.items[0].metadata.name}') \
+kubectl cp k3s-pub.pem $VAULT_POD:/tmp/k3s-pub.pem
 ```
-
-# authentication
-`/route/to/kubernetes.crt` is in your kubernetes cluster, in k3s's case is in `/var/lib/rancher/k3s/server/tls/server-ca.crt`
-
+# authenticate with token
 ``` bash
-vault auth enable kubernetes \
-vault write auth/kubernetes/config \ kubernetes_host="https://100.96.193.254:6443" \ kubernetes_ca_cert=/route/to/kubernetes.crt \ issuer="https://kubernetes.default.svc.cluster.local" \
+kubectl exec -it deployment/vault -- vault write auth/jwt/config \ jwt_validation_pubkeys=@/tmp/k3s-pub.pem \ issuer="https://kubernetes.default.svc.cluster.local"
 ```
-## create policy
+# create role
 ``` bash
-cat <<EOF > wallet-policy.hcl path "secret/data/wallettracker/*" { capabilities = ["read"] } EOF \
-vault policy write wallet-policy wallet-policy.hcl
-```
-
-## create role
-``` bash
-vault write auth/kubernetes/role/wallet-role \
-    bound_service_account_names=wallet-sa \
-    bound_service_account_namespaces=default \
-    policies=wallet-policy \
-    ttl=24h
+kubectl exec -it deployment/vault -- vault write auth/jwt/role/mariadb \ role_type="jwt" \ bound_audiences="https://kubernetes.default.svc.cluster.local,k3s" \ user_claim="sub" \ bound_subject="system:serviceaccount:default:default" \ policies="wallettracker-policy" \ ttl="1h"
 ```
