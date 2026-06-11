@@ -21,38 +21,38 @@ Cuando tú escribes una app moderna:
 
 --- 
 
-te permite crear projectes React, con plantilla directamente o atraves del menú interactivo.
+te permite crear proyectos React, con plantilla directamente o a través del menú interactivo.
 
 
 ### Crear proyecto sin argumentos.
 
-Si no especificas argumentos, Vite te mostra un menu de shell interactivo con el que podras elegir framework i variante:
+Si no especificas argumentos, Vite te mostrará un menú de shell interactivo con el que podrás elegir framework y variante:
 
 ```shell
 npm create vite@latest 
 ```
 
-Sigue el menu interactivo. 
+Sigue el menú interactivo. 
 
 >[!note] 
-> Si le has dado que no a el paso 5 tendras que instalar npm manualmente en el proyecto y correr el servidor de desarrollo de vite:
+> Si le has dado que no al paso 5 tendrás que instalar npm manualmente en el proyecto y correr el servidor de desarrollo de vite:
 > ```
-> cd <nom-del-projecte>
+> cd <nombre-del-proyecto>
 > npm install
 > npm run dev
 > ```
 
-El menú te pedira:
+El menú te pedirá:
 
-1. **Nom del projecte** 
-2. **Framework** → tria: `React`
-3. **Variantes de lenguaje** → 
-    - **`JavaScript`  
+1. **Nombre del proyecto** 
+2. **Framework** → elige: `React`
+3. **Variantes de lenguaje** → 
+    - **`JavaScript`  
     - `JavaScript-SWC`
-    - `TypeScript` 
+    - `TypeScript` 
     - 
-4. **Rolldown**: (No, per defecte)
-5. **Instal·lació i arrancada automàtica**: Instal·la dependències i arrenca el servidor de desenvolupament
+4. **Rolldown**: (No, por defecto)
+5. **Instalación y arranque automático**: Instala dependencias y arranca el servidor de desarrollo
 
 ### Opción B — Crear proyecto con plantilla 
 
@@ -63,5 +63,5 @@ npm create vite@latest my-app -- --template react
 Mas rapido que la anterior ya que le pasamos como argumentos la plantilla para react, y el nombre del proyecto. 
 
 > [!note]
-> Ambas maneras activan el soporte paraJSX automàticamente. No es necesario configurar Babel manualmente.
+> Ambas maneras activan el soporte para JSX automáticamente. No es necesario configurar Babel manualmente.
 
