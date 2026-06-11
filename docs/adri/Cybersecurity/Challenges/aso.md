@@ -1,7 +1,12 @@
 #red-local #nmap #camaras-ip #android-tv #adb #castv2 #pentesting
 
 # scanning & enumeration 
---- 
+---
+
+> [!tip] Notas relacionadas
+> - [[Nmap cheatsheet]] para comandos de escaneo
+> - [[Reconnaissance]] para la fase de reconocimiento
+> - [[Scanning-Enumeration]] para conceptos de escaneo
 ###  Router - 192.168.1.1 
 
 Nmap scan report for 192.168.1.1

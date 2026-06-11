@@ -3,7 +3,7 @@
 # Que es una vuln Cross Site Scripting ( XSS )
 
 Un XSS es un tipo de vulnerabilidad que permite al atacante ejecutar código a través del sitio web a través de las interacciones que tiene el usuario con la app vulnerable.  
-Te permite saltarte la protección de SOP que esta diseñada para segregar las diferentes 
+Te permite saltarte la protección de [[Vocabulary|SOP]] que esta diseñada para segregar las diferentes 
 webs .
 
 XSS  normalmente permiten a un atacante enmascarar el usuario como usuario victima, realizando cualquiera accion que el usuario puede realizar, y acceder a los datos del usuario. Si el usuario victima tiene acceso privilegiado dentro de la apliacion, el atacante puede ganar acceso a toda la funcionalidad y datos de la aplicacion.

@@ -174,3 +174,7 @@ cuando usar defualt y cuando no
  export default componente grande
 
   zustand, redux  gestion del estado global 
+
+> [!tip] Notas relacionadas
+> - [[React Hook Form & Zod]] para formularios y validación
+> - [[Custom hooks pattern Notes]] para arquitectura de hooks personalizados

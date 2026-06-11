@@ -3,6 +3,10 @@
 # Instalacion
 
 Aqui ira la docu de como se instala.
+
+> [!tip] Notas relacionadas
+> Para configuración de Linux ligero, consulta [[Alpine-Linux]].
+
 # Configuracion posterior
 
 > [!tip] 

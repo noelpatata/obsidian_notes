@@ -1,6 +1,6 @@
 #nodejs #nvm #version-management #javascript #linux #setup
 
-Tienes diferentes proyectos con diferentes versiones de nodejs, o como me pasa en ubuntu a mi que la ultima version no esta en los repos de mi distro.
+Tienes diferentes proyectos con diferentes versiones de nodejs, o como me pasa en ubuntu a mi que la ultima version no esta en los repos de mi distro. Ver también [[React Notes]] para desarrollo frontend con Node.js.
 
 >[!tip] Solucion:
 > Instalar NVM un gestor de versiones de nodejs, donde puedes configurar una version por defecto pero también cambiar de version con comandos simples. 

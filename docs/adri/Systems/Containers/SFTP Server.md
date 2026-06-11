@@ -9,7 +9,7 @@
 
 ### Este es el `docker-compose.yml` en cuestion
 
-Esto realmente solo es para no perder el earchivo 
+Esto realmente solo es para no perder el earchivo. Ver también [[Minecraft Server]] para otros usos de Docker.
 
 ```yml 
 services:

@@ -2,6 +2,7 @@
 
 > [!tip]
 > Por defecto, **Ctrl + b** es el _prefix_ de tmux.  
+> Ver [[Alpine-Linux]] para configuración de servidores Linux.
 
 ## 💼 Sesiones
 

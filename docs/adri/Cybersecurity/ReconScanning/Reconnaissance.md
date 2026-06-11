@@ -8,7 +8,7 @@
 ### Pasivo
 Donde la recopilación de información se realiza sin interacción con los sistemas, webs ni persona, por ejemplo con herramientas de OSINT para recopilar los datos de las redes sociales, leaks públicos, información compartida por parte del objetivo por un descuido... La información obtenida podría no ser valida. 
 ### Activo
-Este interactua de manera directa con los sistemas que se encuentran a nuestro alcance, por ejemplo hacer un, escaneo de la red, de sus puertos, nslookup, pero siempre de manera global, para poder profundizar en la fase de escaneo y enumeración, llamar un responsable para sacarle información con ingeniería social ... Esto aumenta el riesgo de ser descubierto. 
+Este interactua de manera directa con los sistemas que se encuentran a nuestro alcance, por ejemplo hacer un, escaneo de la red, de sus puertos, nslookup, pero siempre de manera global, para poder profundizar en la fase de [[Scanning-Enumeration|escaneo y enumeración]], llamar un responsable para sacarle información con ingeniería social ... Esto aumenta el riesgo de ser descubierto. 
 
 
 # Practicas y consideraciones 
@@ -19,7 +19,7 @@ Este interactua de manera directa con los sistemas que se encuentran a nuestro a
 2. **Recolección de evidencias:** Cada dato recopilado debe estar respaldado por pruebas solidas, puede ser tomando capturas de pantalla, guardando registros de actividad, o cualquier otro tipo de dato que respalde la evidencia. 
 3. **Mantenimiento de la confidencialidad:** Evitar la exposición de datos sensibles. 
 4. **Verificación de la información recolectada:** No es bueno confiar directamente en los datos obtenidos, una de las tareas es verificarlos con las evidencias, y diferentes fuentes o métodos.
-5. **Automatización:** Para aumentar la productividad y eficiencia, descargar o desarrollar scripts que nos ayuden con la automatización de la fase, sin olvidar supervisar y validar los datos obtenidos.
+5. **Automatización:** Para aumentar la productividad y eficiencia, descargar o desarrollar scripts que nos ayuden con la automatización de la fase, sin olvidar supervisar y validar los datos obtenidos. Herramientas como [[Nmap cheatsheet|Nmap]] son esenciales para esta fase.
 
 # Retos y dificultades
 

@@ -128,6 +128,10 @@ export PATH=$PATH:/usr/local/bin/ngrok
 
 4. Guarda el token de tu session de ngrok.
 
+> [!tip] Notas relacionadas
+> - [[Proxmox]] para virtualización de servidores
+> - [[Minecraft Server]] para configurar servidores de juego
+
 ```bash 
 ngrok config add-authtoken TU_TOKEN_DE_NGROK_AQUI
 ```

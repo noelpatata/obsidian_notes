@@ -426,8 +426,11 @@ QUIT
 
 
 
+> [!tip] Comparación
+> Para bases de datos SQL relacionales, consulta [[PostgreSQL Notes]].
+
 > [!done]  
-> Usa prefijos (`user:1`, `order:12`, `session:xyz`) para simular “tablas” en Redis.  
+> Usa prefijos (`user:1`, `order:12`, `session:xyz`) para simular "tablas" en Redis.  
 > Esto te permite mantener una estructura tipo SQL sin perder velocidad.
 
 ##### Crear usuario
