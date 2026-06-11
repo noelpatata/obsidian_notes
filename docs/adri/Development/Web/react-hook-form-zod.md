@@ -2,7 +2,7 @@
 
 ## Qué es React Hook Form?
 
-React Hook Form es una librería para gestionar los formularios en react de manera mas eficiente y limpia. Para más detalles sobre React, consulta [[React Notes]]. *En resumen:*
+React Hook Form es una librería para gestionar los formularios en react de manera mas eficiente y limpia. Para más detalles sobre React, consulta [[react-notes]]. *En resumen:*
 
 >[!tip] Te facilita: 
 >1. **Manejar el estado del formulario por ti** - No necesitas usar `useState` para cada campo.

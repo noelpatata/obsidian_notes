@@ -1,7 +1,7 @@
 #nmap #port-scanning #cheatsheet #pentesting #reconocimiento #nse
 
 > [!note] Notas relacionadas
-> Este cheatsheet es parte de la metodología de [[Reconnaissance|reconocimiento]] y [[Scanning-Enumeration|escaneo y enumeración]].
+> Este cheatsheet es parte de la metodología de [[reconnaissance|reconocimiento]] y [[Scanning-Enumeration|escaneo y enumeración]].
 
 ## ⚡️ Metadatos rápidos
 

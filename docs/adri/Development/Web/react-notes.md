@@ -176,5 +176,5 @@ cuando usar defualt y cuando no
   zustand, redux  gestion del estado global 
 
 > [!tip] Notas relacionadas
-> - [[React Hook Form & Zod]] para formularios y validación
-> - [[Custom hooks pattern Notes]] para arquitectura de hooks personalizados
+> - [[react-hook-form-zod]] para formularios y validación
+> - [[custom-hooks-pattern]] para arquitectura de hooks personalizados

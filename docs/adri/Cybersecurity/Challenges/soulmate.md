@@ -2,7 +2,7 @@
 
 ## 1. Reconocimiento 
 
-1. Ejecute el escaneo con `nmap -sSV -Pn -p-` . Ver [[Nmap cheatsheet]] para más detalles sobre comandos Nmap.
+1. Ejecute el escaneo con `nmap -sSV -Pn -p-` . Ver [[nmap-cheatsheet]] para más detalles sobre comandos Nmap.
 
 ```sh
  adri@archlinux  ~  sudo nmap -sS -Pn -p-1000 -v -v  10.10.11.86

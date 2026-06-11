@@ -152,5 +152,5 @@ else:
 Aqui dejo una pequeña explicacion bloque por bloque de que hace cada cosa : 
 
 > [!tip] Protocolo
-> Para más detalles sobre el protocolo CastV2, consulta [[CastV2]].
+> Para más detalles sobre el protocolo CastV2, consulta [[castv2]].
 

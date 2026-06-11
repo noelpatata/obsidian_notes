@@ -1,7 +1,7 @@
 #android-tv #adb #nmap #wake-on-lan #pychromecast #iot-security #pentesting
 
 **Herramientas:** `nmap`, `adb`, `wakeonlan`, `curl`, `pychromecast`  
-**Objetivo:** Entender puertos abiertos, riesgos y cómo encender el TV remotamente. Ver [[Nmap cheatsheet]] para más detalles sobre Nmap.
+**Objetivo:** Entender puertos abiertos, riesgos y cómo encender el TV remotamente. Ver [[nmap-cheatsheet]] para más detalles sobre Nmap.
 
 ---
 

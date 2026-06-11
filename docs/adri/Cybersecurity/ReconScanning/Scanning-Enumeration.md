@@ -2,18 +2,18 @@
 
 # Escaneo y Enumeración
 
-##### El escaneo es la fase que precede a la [[Reconnaissance|reconocimiento]], y consiste en recolectar información sobre posibles objetivos con el fin de cumplir la tarea, sea análisis forense o pentest. Ejemplos de esta fase incluyen la detección de sistemas en la red, la identificación puertos, servicios y sus posibles vulnerabilidades.
+##### El escaneo es la fase que precede a la [[reconnaissance|reconocimiento]], y consiste en recolectar información sobre posibles objetivos con el fin de cumplir la tarea, sea análisis forense o pentest. Ejemplos de esta fase incluyen la detección de sistemas en la red, la identificación puertos, servicios y sus posibles vulnerabilidades.
 ##### La enumeración, por su parte, se centra en profundizar sobre los datos obtenidos durante el escaneo, extrayendo información mas especifica (como usuarios, recursos compartidos, aplicaciones, versiones de servicios), lo que facilita una comprensión de posibles rastros a seguir o vías de ataque.
  *Es importante guardar y formatear la información de los resultados de estas para tal de facilitar el uso de esta mas adelante.*
 
 > [!tip] Herramientas útiles
-> Para escaneo de puertos y servicios, consulta el [[Nmap cheatsheet]].
+> Para escaneo de puertos y servicios, consulta el [[nmap-cheatsheet]].
 
 ---
 
 ## Herramientas de escaneo
 
-### [[Nmap cheatsheet|Nmap]]
+### [[nmap-cheatsheet|Nmap]]
 
 La herramienta estándar para escaneo de redes y puertos. Permite descubrir hosts, identificar puertos abiertos, detectar servicios y versiones, y ejecutar scripts NSE para vulnerabilidades.
 
@@ -132,6 +132,6 @@ amass enum -d target.com
 > - **Verificar falsos positivos**: Los resultados automáticos pueden contener errores, siempre validar manualmente.
 
 > [!note] Notas relacionadas
-> - [[Reconnaissance]] para la fase previa de reconocimiento
-> - [[Nmap cheatsheet]] para comandos detallados de Nmap
+> - [[reconnaissance]] para la fase previa de reconocimiento
+> - [[nmap-cheatsheet]] para comandos detallados de Nmap
 > - [[Vocabulary]] para definiciones de términos técnicos

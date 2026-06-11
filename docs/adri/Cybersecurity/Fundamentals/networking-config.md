@@ -253,7 +253,7 @@ netstat -a
     
 - `Wireshark`
     
-- [[Nmap cheatsheet|nmap]]
+- [[nmap-cheatsheet|nmap]]
     
 
 ---

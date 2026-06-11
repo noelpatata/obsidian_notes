@@ -2,7 +2,7 @@
 
 ## Introducción
 
-A medida que las aplicaciones de React crecen en complejidad, gestionar la lógica de negocio, las llamadas a API y las actualizaciones de estado puede volverse desafiante. Un enfoque efectivo es organizar tu código en torno a **ganchos personalizados basados en funciones** que encapsulan la lógica para un dominio o función específica de tu aplicación. Ver también [[React Notes]] para conceptos fundamentales de React.
+A medida que las aplicaciones de React crecen en complejidad, gestionar la lógica de negocio, las llamadas a API y las actualizaciones de estado puede volverse desafiante. Un enfoque efectivo es organizar tu código en torno a **ganchos personalizados basados en funciones** que encapsulan la lógica para un dominio o función específica de tu aplicación. Ver también [[react-notes]] para conceptos fundamentales de React.
 
 > [!note]
 > Asi que estuve en busqueda de cual era el mejor patron  o arquitectura para mantener el codigo react limpio y encontre el  patron que mas clean code me parecio. 

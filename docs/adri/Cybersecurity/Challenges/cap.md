@@ -3,7 +3,7 @@
 # Writeup - Máquina CAP (HTB)
 
 ## Resumen Ejecutivo
-Máquina Linux de dificultad fácil que explota **incorrectas asignaciones de capacidades (Capabilities)** en binarios del sistema, permitiendo escalada de privilegios mediante Python con capacidad `cap_setuid`. Ver [[Reconnaissance]] para la fase de reconocimiento.
+Máquina Linux de dificultad fácil que explota **incorrectas asignaciones de capacidades (Capabilities)** en binarios del sistema, permitiendo escalada de privilegios mediante Python con capacidad `cap_setuid`. Ver [[reconnaissance]] para la fase de reconocimiento.
 
 ---
 

@@ -4,8 +4,8 @@
 ---
 
 > [!tip] Notas relacionadas
-> - [[Nmap cheatsheet]] para comandos de escaneo
-> - [[Reconnaissance]] para la fase de reconocimiento
+> - [[nmap-cheatsheet]] para comandos de escaneo
+> - [[reconnaissance]] para la fase de reconocimiento
 > - [[Scanning-Enumeration]] para conceptos de escaneo
 ###  Router - 192.168.1.1 
 
@@ -198,5 +198,5 @@ Pero por lo que sea **permite el trafico por el puerto 22**.
 ---
 
 > [!info] Contenido relacionado
-> Para la guía completa de hacking a Android TV, consulta: [[Hackeo Ético Android TV Escaneo Nmap, ADB y Encendido Remoto]]
+> Para la guía completa de hacking a Android TV, consulta: [[hackeo-etico-android-tv]]
 

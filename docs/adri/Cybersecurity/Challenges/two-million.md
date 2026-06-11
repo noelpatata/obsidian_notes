@@ -5,7 +5,7 @@
 La ip del host es:  10.10.11.221
 El dominio es: http://2million.htb
 
-Ver [[Reconnaissance]] para la metodología de reconocimiento.
+Ver [[reconnaissance]] para la metodología de reconocimiento.
 
 # Scan & Enumeration
 ## Nmap scan 

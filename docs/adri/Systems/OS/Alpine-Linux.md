@@ -130,7 +130,7 @@ export PATH=$PATH:/usr/local/bin/ngrok
 
 > [!tip] Notas relacionadas
 > - [[Proxmox]] para virtualización de servidores
-> - [[Minecraft Server]] para configurar servidores de juego
+> - [[minecraft-server]] para configurar servidores de juego
 
 ```bash 
 ngrok config add-authtoken TU_TOKEN_DE_NGROK_AQUI

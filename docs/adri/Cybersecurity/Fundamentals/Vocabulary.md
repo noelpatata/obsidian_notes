@@ -7,7 +7,7 @@
 - **Same Origin Policy (SOP)** -> Es una medida de seguridad que restringe la forma en que los documentos o scripts de un origen pueden interactuar con recursos de otro origen, previniendo así posibles ataques. Ver también [[XSS]] para vulnerabilidades que explotan esta política.
 - **Cross-Origin Resource Sharing (CORS)** -> Es un mecanismo que permite a los servidores especificar quién puede acceder a los recursos, relajando así las restricciones impuestas por el SOP cuando sea necesario.
 - **CSRF (Cross-Site Request Forgery)** -> Vulnerabilidad que induce al navegador de una víctima autenticada a enviar peticiones HTTP no deseadas a una aplicación vulnerable. El atacante aprovecha la sesión activa del usuario para realizar acciones en su nombre sin su consentimiento.
-- **Privilege Escalation** -> Técnica mediante la cual un atacante obtiene permisos superiores a los que le corresponden, ya sea de forma vertical (más privilegios) o horizontal (acceso a otro usuario con los mismos privilegios). Ver [[Networking config]] para hardening que previene esto.
+- **Privilege Escalation** -> Técnica mediante la cual un atacante obtiene permisos superiores a los que le corresponden, ya sea de forma vertical (más privilegios) o horizontal (acceso a otro usuario con los mismos privilegios). Ver [[networking-config]] para hardening que previene esto.
 
 ## Técnicas de Ataque
 
@@ -25,7 +25,7 @@
 - **CTF (Capture The Flag)** -> Competencia de ciberseguridad donde los participantes resuelven retos de seguridad para encontrar "flags" ocultas. Sirven como práctica para pentesting y análisis forense.
 - **Burp Suite** -> Plataforma de prueba de seguridad web utilizada para realizar análisis de aplicaciones web, incluyendo proxy, scanner de vulnerabilidades y herramientas de manipulación de tráfico HTTP/S.
 - **Netcat (nc)** -> Herramienta de red versátil conocida como el "swiss army knife" de la red. Permite crear conexiones TCP/UDP, transferir archivos, escuchar puertos y establecer shells reversas.
-- **Reverse Shell** -> Tipo de shell donde la víctima se conecta activamente al atacante, permitiendo evadir firewalls que bloquean conexiones entrantes. Ver [[Networking config]] para configuración de red.
+- **Reverse Shell** -> Tipo de shell donde la víctima se conecta activamente al atacante, permitiendo evadir firewalls que bloquean conexiones entrantes. Ver [[networking-config]] para configuración de red.
 - **Bind Shell** -> Tipo de shell donde el servidor escucha en un puerto y el atacante se conecta a él. Más expuesto a firewalls que el reverse shell.
 
 ## Otros Términos

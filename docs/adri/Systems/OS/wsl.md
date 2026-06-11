@@ -93,7 +93,7 @@ wsl explorer.exe .
 ## Casos de uso
 
 - **Desarrollo**: Ejecutar herramientas de desarrollo Linux (gcc, make, python, node) sin salir de Windows.
-- **Pentesting**: Utilizar herramientas como [[Nmap cheatsheet|Nmap]], Metasploit, o Burp Suite en un entorno Linux mientras se usa Windows como sistema principal.
+- **Pentesting**: Utilizar herramientas como [[nmap-cheatsheet|Nmap]], Metasploit, o Burp Suite en un entorno Linux mientras se usa Windows como sistema principal.
 - **Automatización**: Ejecutar scripts bash y automatizaciones Linux directamente en Windows.
 - **Contenedores**: Docker Desktop usa WSL 2 como backend para ejecutar contenedores Linux.
 - **Investigación de seguridad**: Analizar malware Linux, ejecutar herramientas forenses, o configurar laboratorios de prueba.
@@ -106,5 +106,5 @@ wsl explorer.exe .
 
 ## Referencias
 
-- [[Networking config]] para configuración de red dentro de WSL
-- [[Nmap cheatsheet]] para uso de Nmap desde WSL
+- [[networking-config]] para configuración de red dentro de WSL
+- [[nmap-cheatsheet]] para uso de Nmap desde WSL

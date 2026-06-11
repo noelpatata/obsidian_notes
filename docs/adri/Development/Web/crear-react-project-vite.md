@@ -21,7 +21,7 @@ Cuando tú escribes una app moderna:
 
 --- 
 
-te permite crear proyectos React, con plantilla directamente o a través del menú interactivo. Para más detalles sobre React, consulta [[React Notes]].
+te permite crear proyectos React, con plantilla directamente o a través del menú interactivo. Para más detalles sobre React, consulta [[react-notes]].
 
 
 ### Crear proyecto sin argumentos.
