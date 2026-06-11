@@ -1,3 +1,4 @@
+#c #programacion #punteros #memoria-dinamica #valgrind #lenguajes #low-level
 
 ## **1. Configuración Inicial**
 

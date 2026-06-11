@@ -1,3 +1,4 @@
+#htb #soulmate #nmap #gobuster #writeup #pentesting
 
 ## 1. Reconocimiento 
 

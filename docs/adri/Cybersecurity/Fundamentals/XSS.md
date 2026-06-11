@@ -1,3 +1,4 @@
+#xss #web-security #inyeccion #owasp #cybersecurity #burp-suite #dom
 
 # Que es una vuln Cross Site Scripting ( XSS )
 

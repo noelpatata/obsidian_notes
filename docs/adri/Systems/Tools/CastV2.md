@@ -1,3 +1,5 @@
+#castv2 #chromecast #protocolos #websockets #streaming #iot
+
 ## **Protocolo CastV2**
 
 **CastV2** es el **protocolo de comunicación utilizado por dispositivos con Chromecast integrado**, como televisores TCL, Google Chromecast, Google Home, y apps compatibles.

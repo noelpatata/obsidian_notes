@@ -1,3 +1,4 @@
+#docker #sftp #contenedores #ssh #file-server #self-hosted
 
 >[!tip] 
 >Esto realmente es solo para no perder el archivo y la imagen que me gusto para hacer el sftp 

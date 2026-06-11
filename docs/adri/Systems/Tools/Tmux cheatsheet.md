@@ -1,3 +1,4 @@
+#tmux #terminal #linux #cheatsheet #productividad #cli #sysadmin
 
 > [!tip]
 > Por defecto, **Ctrl + b** es el _prefix_ de tmux.  

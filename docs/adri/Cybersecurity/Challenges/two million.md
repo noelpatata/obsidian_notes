@@ -1,3 +1,4 @@
+#htb #two-million #nmap #gobuster #api #writeup #pentesting
 
 # Reconnnaissance
 
@@ -61,4 +62,3 @@ Este genera un codigo de invitacion valida.
 y he podido regsitrarme pegando el codigo en /invite. 
 
 **adri@mail. com y 1234 son los user y password.**
-a

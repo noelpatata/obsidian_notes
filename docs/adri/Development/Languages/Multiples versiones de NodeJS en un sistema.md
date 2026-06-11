@@ -1,3 +1,4 @@
+#nodejs #nvm #version-management #javascript #linux #setup
 
 Tienes diferentes proyectos con diferentes versiones de nodejs, o como me pasa en ubuntu a mi que la ultima version no esta en los repos de mi distro.
 

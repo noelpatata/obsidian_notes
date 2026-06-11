@@ -1,5 +1,5 @@
-
 # Objetivo. 
+#raspberry-pi-pico #badusb #flask #hardware #microcontroladores #webapp #iot
 
 Web app donde puedes ejecutar o comandos, o scripts de tu carpeta para diferentes plataformas desde el rpi-pico como BadUSB. 
 ## Frontend simple con HTML + JS + CSS 

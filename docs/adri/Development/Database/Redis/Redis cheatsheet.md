@@ -1,4 +1,4 @@
-tags: ["redis","database","cli","cheatsheet","crud"]
+#redis #database #cli #cheatsheet #nosql #key-value #backend
 
 
 Redis-cli 

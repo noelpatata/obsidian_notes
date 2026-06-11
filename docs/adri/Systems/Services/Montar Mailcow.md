@@ -1,3 +1,4 @@
+#mailcow #email-server #smtp #dns #dkim #spf #sysadmin #self-hosted
 
 ## Algunos puntos necesarios a tener en cuenta. 
 

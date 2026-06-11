@@ -1,3 +1,4 @@
+#android-tv #adb #nmap #wake-on-lan #pychromecast #iot-security #pentesting
 
 **Herramientas:** `nmap`, `adb`, `wakeonlan`, `curl`, `pychromecast`  
 **Objetivo:** Entender puertos abiertos, riesgos y cómo encender el TV remotamente.
@@ -135,7 +136,7 @@ cast.quit_app()  # Fuerza encendido
 
 ---
 
-## 7. Riesgos de Seguridad (¡ALTO!)
+## 7. Riesgos de Seguridad 
 
 | Riesgo                | Impacto                         |
 | --------------------- | ------------------------------- |
@@ -145,7 +146,7 @@ cast.quit_app()  # Fuerza encendido
 
 ---
 
-## 8. Cómo Proteger el Android TV (¡HAZ ESTO YA!)
+## 8. Cómo Proteger el Android TV 
 
 1. **Desactiva ADB en red**  
    → Ajustes → Sistema → Opciones de desarrollador → **Desactiva "Depuración ADB"**

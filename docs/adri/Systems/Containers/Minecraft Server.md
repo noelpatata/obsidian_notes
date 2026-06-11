@@ -1,3 +1,4 @@
+#docker #minecraft #gaming #contenedores #self-hosted
 
 Primero de todo hay que descargar la imagen del docker 
 

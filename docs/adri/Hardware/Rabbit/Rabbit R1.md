@@ -1,3 +1,4 @@
+#rabbit-r1 #hardware #bootloader #ubuntu-touch #mediatek #iot #jailbreak
 
 > [!note] 
 > **Estado:** Documentado y funcional a marzo 2026  

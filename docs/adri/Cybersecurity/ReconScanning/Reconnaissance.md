@@ -1,3 +1,5 @@
+#reconocimiento #osint #pentesting #metodologia #cybersecurity #teoria
+
 # Que es el reconocimiento en ciberseguridad? 
 
 ##### La fase de reconocimiento es esencial para identificar vulnerabilidades y asegurar la robustez de tus sistemas, consiste en recopilar la mayor cantidad de información sobre nuestros objetivos, con el tal de facilitar mas adelante cumplir con nuestras metas de manera mas efectiva.  

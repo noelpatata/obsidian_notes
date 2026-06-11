@@ -1,3 +1,5 @@
+#nmap #port-scanning #cheatsheet #pentesting #reconocimiento #nse
+
 ## ⚡️ Metadatos rápidos
 
 - Versión recomendada: mantener Nmap actualizado para tener los scripts NSE más recientes.

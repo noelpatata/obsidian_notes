@@ -1,3 +1,4 @@
+#postgresql #mysql #sql #database #relational #backend #comparativa
 
 ######  Postgres es un sistema de administración de bases de datos relacionales FOO que se basa en SQL como interfaz para leer y editar datos, ofrece mas características que MySQL, aporta mas flexibilidad en cuanto a tipos de datos,  integridad de los datos, escalabilidad simultaneidad e. Postgres es apliamble y versatil, y de codigo abierto.
 

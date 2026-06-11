@@ -1,3 +1,4 @@
+#red-local #nmap #camaras-ip #android-tv #adb #castv2 #pentesting
 
 # scanning & enumeration 
 --- 

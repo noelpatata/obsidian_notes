@@ -1,3 +1,5 @@
+#htb #cap #linux-capabilities #privesc #writeup #pentesting #python
+
 # Writeup - Máquina CAP (HTB)
 
 ## Resumen Ejecutivo
@@ -284,10 +286,3 @@ La máquina CAP demuestra la importancia de:
 4. **Monitorear el tráfico de red** en dashboards administrativos
 
 La combinación de una capability peligrosa (`cap_setuid`) en un intérprete poderoso (Python) resultó en una fácil escalada de privilegios, mostrando cómo pequeños errores de configuración pueden comprometer completamente un sistema.
-
----
-
-**Notas para Obsidian:**
-- Usar etiquetas: #htb #cap #linux #capabilities #privesc
-- Enlazar con otras máquinas que usen capabilities
-- Crear plantilla para post-explotación Linux

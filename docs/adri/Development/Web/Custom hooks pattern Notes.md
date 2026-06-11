@@ -1,3 +1,5 @@
+#react #hooks #arquitectura #clean-code #feature-based #typescript #frontend
+
 ## Introducción
 
 A medida que las aplicaciones de React crecen en complejidad, gestionar la lógica de negocio, las llamadas a API y las actualizaciones de estado puede volverse desafiante. Un enfoque efectivo es organizar tu código en torno a **ganchos personalizados basados en funciones** que encapsulan la lógica para un dominio o función específica de tu aplicación.

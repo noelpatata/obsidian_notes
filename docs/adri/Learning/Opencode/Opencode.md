@@ -1,3 +1,4 @@
+#opencode #ia #coding-assistant #open-source #cheatsheet #agents
 
 Open Code es una plataforma de coding con IA, como es Claude Code, con una gran diferencia, es de codigo abierto. Tiene dos maneras de cobrarte por el uso, un plan llamado Go de 10 dolares, donde te dan 60 dolares para gastar en ciertos modelos que entran en la suscripcion que van cambiando, pero son por regla general modelos abiertos, baratos.  Y  el modelos Zen que  cobra a destajo por uso de cada modelo, donde siempre hay unos pocos modelos gratuitos de manera temporal que van cambiando.  
 

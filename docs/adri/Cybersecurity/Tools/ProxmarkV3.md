@@ -1,3 +1,5 @@
+#proxmark #rfid #nfc #hardware-hacking #cybersecurity #pentesting
+
 # Que es ProxmarkV3 ? 
 
 El ProxmarkV3 es un dispositivo que te permite leer y grabar comunicaciones de radiofrecuencia 13Mhz y 135khz, pudiendo analizar las comunicaciones de los dispositivos que usan estas, NFC y RFID por ejemplo. Esto lo hace atraves del sofware mantenido por la comunidad en github en el [repo](https://github.com/RfidResearchGroup/proxmark3.git), el cual tiene todo tipo de herramientas para explotar al maximo este dispositivo, y poder penetrar la seguridad de este tipo de tecnologias, con sus respectivos limites al hardware.  Esta formado por 3 partes el lector de low frequency 135khz, y el lector high frequency 13Mhz, y el microcontrolador **AT91SAM7S512 (ARM7TDMI, 512KB flash, 64KB RAM)** ,  este chip es mas rapido que el tipico arduino, y es el que se encarga de correr el firmware que controla los lectores y orquesta los ataques. Todo este hardware es de arquitectura abierta de ahi que existan clones chinos. 

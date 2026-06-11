@@ -1,3 +1,5 @@
+#castv2 #chromecast #pychromecast #python #iot #control-remoto #pentesting
+
 # Que es cast 
 
 CastV2 es el protocolo seguro y en tiempo real que permite “castear” contenido desde un dispositivo a un receptor compatible, controlando reproducción, apps y volumen mediante mensajes binarios sobre WebSockets cifrados.
