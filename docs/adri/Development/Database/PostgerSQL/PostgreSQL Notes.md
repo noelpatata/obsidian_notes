@@ -1,6 +1,6 @@
 #postgresql #mysql #sql #database #relational #backend #comparativa
 
-######  Postgres es un sistema de administración de bases de datos relacionales FOO que se basa en SQL como interfaz para leer y editar datos, ofrece mas características que MySQL, aporta mas flexibilidad en cuanto a tipos de datos,  integridad de los datos, escalabilidad simultaneidad e. Postgres es apliamble y versatil, y de codigo abierto.
+######  Postgres es un sistema de administración de bases de datos relacionales que se basa en SQL como interfaz para leer y editar datos, ofrece mas características que MySQL, aporta mas flexibilidad en cuanto a tipos de datos,  integridad de los datos, escalabilidad simultaneidad e. Postgres es apliamble y versatil, y de codigo abierto.
 
 
 # Características de Postgres.
@@ -11,11 +11,11 @@ Postgres viene repleta de abundantes características y extensiones para crear b
 
 ### Cumplimiento ACID.
 
-Postgres siguie los principios ACID(atomicidad, cosisntencia, aislamiento, durabilidad), lo que garantiza la integridad y confiabilidad de los datos, incluso en caso de fallas del sistema.
+Postgres siguie los principios ACID(atomicidad, consistencia, aislamiento, durabilidad), lo que garantiza la integridad y confiabilidad de los datos, incluso en caso de fallas del sistema.
 
 ### Tipos de datos. 
 
-Funciona con datos realcionales FOO, por lo tanto ofrece un amplio numero de tipos de datos integrados, incluyendo enteros numericos, cadenas ,fechas, JSON, XML, geometricos, direciones de red, GUID's ... Ademas los usuarios pueden definir mas tipos de datos personalizados. 
+Funciona con datos relacionales, por lo tanto ofrece un amplio numero de tipos de datos integrados, incluyendo enteros numericos, cadenas ,fechas, JSON, XML, geometricos, direciones de red, GUID's ... Ademas los usuarios pueden definir mas tipos de datos personalizados. 
 
 ### Indexación Avanzada. 
 
@@ -37,7 +37,7 @@ Postgres es una de los sistemas mas flexibles para los developers, debido a su c
 
 ### Recuperación de un punto en el tiempo. 
 
-Postgres permite a los developers utilizar PITR (Recuperación de un punto en el tiempo) para restaurara bases de datos, cuando se ejecutan inciativas de recuperacion de datos. Dado que posgres mantiene un registro de escritura anticipada ( WAL) en todo momento, registra todos los cambios de la base de datos, lo cual  facilita la restauración de los sistemas de archivos a un punto de partida estable. 
+Postgres permite a los developers utilizar PITR (Recuperación de un punto en el tiempo) para restaurar bases de datos, cuando se ejecutan iniciativas de recuperacion de datos. Dado que posgres mantiene un registro de escritura anticipada ( WAL) en todo momento, registra todos los cambios de la base de datos, lo cual  facilita la restauración de los sistemas de archivos a un punto de partida estable. 
 
 ### Procedimientos almacenados. 
 
@@ -49,7 +49,7 @@ Proporciona caracteristicas de seguirdad robustas que incluyen encriptacion SSL 
 
 ### Envoltorios de datos externos. 
 
-Permite acceder a datos alamacenados en fuentes externas como otras BBDD relacionales, BBDD no SQL o incluso servicios web atraves de envoltorios de datos exeternos lo que permite una integración perfecta con fuentes de datos heterogéneas. 
+Permite acceder a datos alamacenados en fuentes externas como otras BBDD relacionales, BBDD no SQL o incluso servicios web a través de envoltorios de datos exeternos lo que permite una integración perfecta con fuentes de datos heterogéneas. 
 
 ### Soporte geoespacial. 
 

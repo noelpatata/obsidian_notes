@@ -24,12 +24,12 @@ Vale pero no puedes ejecutar los comandos de manera directa necesitas una herram
 
 Asi que he desarrollado un script en python para poder conectarnos al websocket y ejecutar comandos . 
 
-He elegido python mas que nada por la libreria de pychromecast, aunque vi una utlidad similar para js que podrias ejecutar con nodejs. 
+He elegido python mas que nada por la libreria de pychromecast, aunque vi una utilidad similar para js que podrias ejecutar con nodejs. 
 
 > [!note]  Dependencias . 
 > 
 > - Pychromecast 
->  Utilizo la libreria de pychromecast por que ya funciona, esta hecho y me facilita todo el script a algo muy simple, que solo tengo que pasar ip y accion desdeada 
+>  Utilizo la libreria de pychromecast por que ya funciona, esta hecho y me facilita todo el script a algo muy simple, que solo tengo que pasar ip y accion deseada 
 
 ###### El script en cuestion : 
 
@@ -131,8 +131,8 @@ elif accion == "unmute":
 elif accion == "youtube":
 
 	if not param:
-	print("Falta video_id de YouTube")
-	sys.exit(1)
+		print("Falta video_id de YouTube")
+		sys.exit(1)
 
 	yt = YouTubeController()
 	cast.register_handler(yt)

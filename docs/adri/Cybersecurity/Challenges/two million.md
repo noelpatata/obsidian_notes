@@ -24,7 +24,7 @@ El dominio es: http://2million.htb
 ────────────────────────────────────────────────────────────
 
 Viendo que hay un servicio web en el puerto 80 he procedido a intentear conectarme de manera directa con la ip del servidor, me ha redirigido a el dominio 2million.htb. 
-Procedo a agregar este domino a hosts. 
+Procedo a agregar este dominio a hosts. 
 
 ## fuzzing de la web en el puerto 80
 
@@ -59,6 +59,6 @@ Esta es la request:
 
 Este genera un codigo de invitacion valida. 
 2A2L3-JI834-GS893-S7TID
-y he podido regsitrarme pegando el codigo en /invite. 
+y he podido registrarme pegando el codigo en /invite. 
 
 **[credenciales-encontradas] son los user y password.**

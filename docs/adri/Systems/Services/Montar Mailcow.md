@@ -13,12 +13,12 @@ Los provedores de internet bloquean el puerto 25 en redes residenciales por razo
 **Así que aunque abras puertos en el router ->  no funciona el servicio.**
 
 >[!tip]  Solucion 
-> Cambiar el protocolo a uno permitido como el 587 usando **SMPT con STARTLSS** , con el fin de evitar el bloqueo. Y aplicando cifrado seguro para las conexiones de correo.   
+> Cambiar el protocolo a uno permitido como el 587 usando **SMPT con STARTTLS** , con el fin de evitar el bloqueo. Y aplicando cifrado seguro para las conexiones de correo.   
 
 ---
 ### El cifrado no puede ser autofirmado.
 
-El cifrado debe ser dado por una entidad certificadora, por que los clientes de correo convencionales no reconcen los autofirmados como una entidad de confianza. 
+El cifrado debe ser dado por una entidad certificadora, por que los clientes de correo convencionales no reconocen los autofirmados como una entidad de confianza. 
 
 ### DNS y Registros de mail services. 
 

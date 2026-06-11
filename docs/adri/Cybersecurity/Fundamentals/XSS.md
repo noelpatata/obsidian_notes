@@ -2,8 +2,8 @@
 
 # Que es una vuln Cross Site Scripting ( XSS )
 
-Un XSS es un tipo de vulnerabilidad que permite al atacante ejecutar codigo atraves del sitio web atraves de las interaciones que tiene el usuario con la app vulnerable.  
-Te permite saltarte la protecion de  SOP que esta diseñada para segregar las diferentes 
+Un XSS es un tipo de vulnerabilidad que permite al atacante ejecutar código a través del sitio web a través de las interacciones que tiene el usuario con la app vulnerable.  
+Te permite saltarte la protección de SOP que esta diseñada para segregar las diferentes 
 webs .
 
 XSS  normalmente permiten a un atacante enmascarar el usuario como usuario victima, realizando cualquiera accion que el usuario puede realizar, y acceder a los datos del usuario. Si el usuario victima tiene acceso privilegiado dentro de la apliacion, el atacante puede ganar acceso a toda la funcionalidad y datos de la aplicacion.
@@ -15,7 +15,7 @@ Si un atacante puede controlar un script que esta ejecutado en el navegador de l
 XSS funciona manipulando un sitio web vulnerable para que devuelva un codigo JS malicioso a los usuarios. Cuando el codigo se ejecuta dentro del navegador de la victima, el atacante puede comprometer su interacion con la aplicacion.
 # XSS PoC
 
-Puedes confirmar la gran malloria de xss injectando un payload que causa que tu navegador ejecuyte algun codigo arbritario de JS. En la portswigger academy recomiendan usar el metodo `print()` por que no esta tan utilizado como `alert()` y puede llegar a colar mas como PoC.
+Puedes confirmar la gran mayoría de xss injectando un payload que causa que tu navegador ejecute algun codigo arbitrario de JS. En la portswigger academy recomiendan usar el metodo `print()` por que no esta tan utilizado como `alert()` y puede llegar a colar mas como PoC.
 
 # Cuales son los main types de XSS
 
@@ -53,7 +53,7 @@ Si otro usuario de la aplicación solicita la URL del atacante, entonces el scri
 - Modificar cualquier informacion que el usuiario puede modificar.
 - Iniciar interaciones con otros usuarios de la aplicacion incluyendo ataques maliciosos, que aparecen como que los a realizado la victima original.
 
-Hay varias medios por los cuales un atacante puede inducir ha a la victima a realizar una victima que ellos controlan. Esto podria ser por ejemplo dejar links, o enviar un email, tweet o otro mensaje. El ataque puede ser contra un usuario conocido o cualquier ataque indiscriminiado contra cualuier usuario de la aplicacion.
+Hay varias medios por los cuales un atacante puede inducir ha a la victima a realizar una victima que ellos controlan. Esto podria ser por ejemplo dejar links, o enviar un email, tweet o otro mensaje. El ataque puede ser contra un usuario conocido o cualquier ataque indiscriminado contra cualquier usuario de la aplicacion.
 
 La necesidad de un mecanismo externo para el ataque significa que el impacto de la **Reflected XSS** es generalmente menos severo que una  **Stored XSS**. 
 
@@ -169,7 +169,7 @@ Esto funciona por que como explicabamos antes jQuery no sanitiza perse, y si el 
 
 ### Reflected XSS into attribute with angle brackets HTML-encoded
 
-En este tipo de XSS se basa en que el atacante utiliza la actual request para injectar codigo malicioso, pero se tiene que saltar las proteciones del servidor que  trata encodear
+En este tipo de XSS se basa en que el atacante utiliza la actual request para injectar codigo malicioso, pero se tiene que saltar las protecciones del servidor que  trata encodear
 los angle brackets . Esto puede succeder  modificar un input que no sanitiza la entrada en su totalidad.
 
 *como es el caso  del ejemplo:*
@@ -209,7 +209,7 @@ Este tipo de XSS se basa en la directiva **`ng-app`** de angular, esta directiva
 ```
 
 Por que funciona esto? 
-Por que aunque el servidor http no codifique el div como div si no como texto plano, a angular le da completmanete igual por que escanea la pagina despues de que el servidor termino de enviarla. 
+Por que aunque el servidor http no codifique el div como div si no como texto plano, a angular le da completamente igual por que escanea la pagina despues de que el servidor termino de enviarla. 
 
 >[!note]
 Algo a tener en cuenta es que de esta manera no se puede llamar a funciones globales, no funcionan por razones de seguridad angular tiene un parser de la funcion, por lo que debemos forzar al llamarlo desde el constructor para que lo encuentre.

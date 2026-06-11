@@ -6,7 +6,7 @@ Aqui ira la docu de como se instala.
 # Configuracion posterior
 
 > [!tip] 
->  *Esto son configuraciones simples solo tomo un par de anotaciones por si me olvido de las rutas o paquetes en alpine poder consultar rapidamente*
+>  *Esto son configuraciones simples solo tomo un par de anotaciones por si me olvido de las rutas o paquetes en Proxmox poder consultar rapidamente*
 
 ---
 ## 📦 Docker dentro de LXC en Proxmox

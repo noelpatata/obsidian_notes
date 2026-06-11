@@ -6,7 +6,7 @@ Redis-cli
 
 
 > [!tip]
->*El CLI de redis se usa para interactuar con el redis servier. Este te permite interactuar con la bbdd para manejar los datos monitoraer el rendimiento, debugar.* 
+>*El CLI de redis se usa para interactuar con el redis server. Este te permite interactuar con la bbdd para manejar los datos monitoraer el rendimiento, debugar.* 
 
 
 

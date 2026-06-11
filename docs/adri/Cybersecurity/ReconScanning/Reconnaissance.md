@@ -2,7 +2,7 @@
 
 # Que es el reconocimiento en ciberseguridad? 
 
-##### La fase de reconocimiento es esencial para identificar vulnerabilidades y asegurar la robustez de tus sistemas, consiste en recopilar la mayor cantidad de información sobre nuestros objetivos, con el tal de facilitar mas adelante cumplir con nuestras metas de manera mas efectiva.  
+##### La fase de reconocimiento es esencial para identificar vulnerabilidades y asegurar la robustez de tus sistemas, consiste en recopilar la mayor cantidad de información sobre nuestros objetivos, con el fin de facilitar mas adelante cumplir con nuestras metas de manera mas efectiva.  
 
 ###### *Se divide en dos tipos:* 
 ### Pasivo
@@ -28,4 +28,4 @@ Este interactua de manera directa con los sistemas que se encuentran a nuestro a
 1. **Adaptación ante defensas avanzadas:** Superar las implementaciones de seguridad de los firewalls, honeypots, sistemas de prevención de intrusiones, son un desafió para realizar reconocimiento en redes y servidores, de no sortearlos con efectividad, habría exito en la tarea. 
 2. **Identificación de recursos ocultos:** Es otro reto que afrontar, identificar recursos, subdominios, paginas no indexadas, puertos, servicios, y direcciones internas que no se exponen al exterior. 
 3. **Gestión de la sobrecarga de datos recopilados:** Cuando se tiene demasiada información, puede dar a una sobrecarga de datos, es importante identificar la información realmente útil y veraz.
-4. **Eliminar duplicados y verificar la información:** Toda la información recopilada debe ser verificada atraves de diferentes fuentes y herramientas, ademas, se deben purgar los duplicados, y quedarnos con la información relevante. 
+4. **Eliminar duplicados y verificar la información:** Toda la información recopilada debe ser verificada a través de diferentes fuentes y herramientas, ademas, se deben purgar los duplicados, y quedarnos con la información relevante. 
