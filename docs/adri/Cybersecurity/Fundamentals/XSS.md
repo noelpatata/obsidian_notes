@@ -68,7 +68,49 @@ Testear  **Reflected XSS** manualmente involucra las siguientes acciones.
 
 # Stored XSS
 
+La **Stored XSS** (también llamada Persistent XSS o Second-Order XSS) ocurre cuando el script malicioso se almacena permanentemente en el servidor de la aplicación, ya sea en una base de datos, un campo de usuario, un comentario, un mensaje, etc. Todos los usuarios que visiten la página afectada ejecutarán el código automáticamente.
 
+A diferencia de la [[XSS#Reflected XSS|Reflected XSS]], no es necesario engañar a la víctima con un enlace especial: basta con que acceda a la página contaminada.
+
+## Ejemplo básico
+
+Imagina un foro donde los usuarios pueden publicar comentarios. Si el servidor no sanitiza la entrada:
+
+```
+<!-- Comentario legítimo -->
+<p>Muy buen artículo</p>
+
+<!-- Comentario con Stored XSS -->
+<p>Muy buen artículo <script>print('hacked')</script></p>
+```
+
+El script se almacena en la BBDD y se ejecuta cada vez que alguien carga la página del foro.
+
+## Diferencia con Reflected XSS
+
+| Aspecto | Reflected XSS | Stored XSS |
+|---|---|---|
+| Almacenamiento | En la URL / request HTTP | En el servidor (BBDD, archivos) |
+| Activación | Víctima debe hacer click en enlace | Víctima solo visita la página |
+| Persistencia | No persiste | Persiste hasta que se elimine |
+| Impacto | Individual por request | Masivo (todos los visitantes) |
+
+## Impacto de **Stored XSS** attacks
+
+El impacto es generalmente **más severo** que una Reflected XSS por su naturaleza persistente y masiva:
+
+- Robo de credenciales y tokens de sesión de múltiples usuarios.
+- Keylogging para capturar datos sensibles.
+- Defacement del sitio web (modificar contenido visible).
+- Redirección a sitios maliciosos.
+- Descarga de malware en los dispositivos de los visitantes.
+
+## ¿Cómo encontrar y testear Stored XSS?
+
+- Buscar campos de entrada que se muestren posteriormente a otros usuarios (comentarios, perfiles, mensajes, publicaciones).
+- Injectar payloads y verificar si se ejecutan al cargar la página.
+- Usar [[Vocabulary|Burp Suite]] para interceptar y manipular requests antes de enviarlas al servidor.
+- Verificar si la aplicación filtra o sanitiza `<script>`, event handlers (`onload`, `onerror`), o protocolos peligrosos (`javascript:`).
 
 # Other things 
 
