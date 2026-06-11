@@ -58,8 +58,8 @@ http://10.10.10.245/data/2
 
 ```
 FTP Credentials:
-USER: nathan
-PASS: Buck3tH4TF0RM3!
+USER: [credenciales-encontradas]
+PASS: [credenciales-encontradas]
 ```
 
 ---
@@ -69,8 +69,8 @@ PASS: Buck3tH4TF0RM3!
 ### 3.1 Conexión FTP
 ```bash
 ftp 10.10.10.245
-# Usuario: nathan
-# Contraseña: Buck3tH4TF0RM3!
+# Usuario: [credenciales-encontradas]
+# Contraseña: [credenciales-encontradas]
 ```
 
 ### 3.2 Shell Reversa

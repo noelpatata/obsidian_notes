@@ -61,4 +61,4 @@ Este genera un codigo de invitacion valida.
 2A2L3-JI834-GS893-S7TID
 y he podido regsitrarme pegando el codigo en /invite. 
 
-**adri@mail. com y 1234 son los user y password.**
+**[credenciales-encontradas] son los user y password.**

@@ -17,7 +17,7 @@ sftp:
 image: atmoz/sftp:latest
 container_name: sftp_container
 environment:
-  - SFTP_USERS=adrian:1234:1001  # usuario:contraseña:UID
+  - SFTP_USERS=usuario:contraseña:UID  # Cambia por tus credenciales
 volumes:
   - /srv/data:/home/adrian/data
   - ~/.ssh/id_ed25519.pub:/home/adrian/.ssh/authorized_keys:ro

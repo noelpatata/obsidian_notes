@@ -129,5 +129,5 @@ export PATH=$PATH:/usr/local/bin/ngrok
 4. Guarda el token de tu session de ngrok.
 
 ```bash 
-ngrok config add-authtoken 30EwHVsP5M1A4JD2SjJ2lhcQdWl_6Yv2TryQ5e1Hnnw9KK353
+ngrok config add-authtoken TU_TOKEN_DE_NGROK_AQUI
 ```
