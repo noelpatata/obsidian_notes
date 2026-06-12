@@ -20,10 +20,6 @@ PORT   STATE    SERVICE REASON
 80/tcp open     http    syn-ack ttl 64
 MAC Address: CC:D4:A1:1F:5E:50 (MitraStar Technology)
 
-
-
-
-
 ### Ubiquiti - 192.168.1.43
 Nmap scan report for 192.168.1.43
 Host is up, received arp-response (0.0066s latency).
