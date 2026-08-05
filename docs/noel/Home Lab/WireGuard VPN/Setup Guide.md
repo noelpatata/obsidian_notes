@@ -1,0 +1,1 @@
+Although [this guide](https://openwrt.org/docs/guide-user/services/vpn/wireguard/server) I followed this guide, I needed to install `qrencode` and `proto-wireguard` packages from the UI (in CLI did not work) to finish this setup.

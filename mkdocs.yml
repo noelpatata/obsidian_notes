@@ -1,0 +1,16 @@
+site_name: Wiki
+site_url: https://noelpatata.github.io/obsidian_notes/
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search

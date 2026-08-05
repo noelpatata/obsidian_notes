@@ -1,0 +1,2 @@
+After creating this tunnel a few times, I think that the easiest and most straight forward is to just go to the cloudflare dashboard, create the tunnel, then create the service in the linux server, and configure the dns route, thats it.
+You can see this in [the following guide](https://gist.github.com/sarkrui/a2998f3a6256a43a5a41dbf5edf5947f)

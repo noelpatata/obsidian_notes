@@ -1,0 +1,1 @@
+Inside this directory `/var/lib/jenkins/workspace/test_terraform_noel/terraform`, we have the following file `terraform.tfstate`. This file saves the VM_ID so it can delete the old one when rerunning. 
