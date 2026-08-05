@@ -12,6 +12,7 @@ a deployment handles the replicas of this pod, if the pod falls, the deployment 
 kubectl delete -f vault-infra.yaml
 ```
 # start services
+reapplies config if you changed the .yaml file
 ```bash
 kubectl apply -f vault-infra.yaml
 ```
@@ -26,7 +27,19 @@ kubectl logs wallet-tracker-pod -c fetch-secrets
 ```bash
 kubectl logs deployment/vault
 ```
+``` bash
+kubectl describe pod -l app=lanoiapintada | grep -A 10 Events:
+```
 # enter in bash
 ``` bash
 kubectl exec -it deployment/mariadb -- /bin/sh
+```
+# restart deployment
+this applies when you did not change the .yaml file
+```bash
+kubectl rollout restart deployment lanoiapintada-app
+```
+# force deployment of pods
+``` bash
+kubectl delete pods -l app=lanoiapintada
 ```
